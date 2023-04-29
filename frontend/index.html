@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LurkForWork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/auth.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/nav-bar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/job.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main role="main" id="main">
+        <div id="section-logged-out">
+            <h1>lurkforwork.com</h1>
+            <div class="container" id="login-page">
+                <h2>Welcome!</h2>
+                <div class="form-wrap">
+                    <input type="email" name="email" id="login-email" placeholder="Enter email" required autocomplete="off" >
+                </div>
+                <div class="form-wrap">
+                    <input type="password" name="password" placeholder="Enter Password" id="login-password">
+                </div>
+                <button type="submit" class="btn btn-primary" id="login-button">Login</button>
+                <div>Not a member?<div class="btn btn-link" id="nav-signup">Signup</div></div>
+            </div>
+            <div class="hide container" id="signup-page">
+                <h2>Sign up to LurkForWork!</h2>
+                <div class="form-wrap">
+                    <input type="text" name="Full Name" id="signup-name" placeholder="Full Name" required autocomplete="off">
+                </div>    
+                <div class="form-wrap">
+                    <input type="email" name="email" id="signup-email" placeholder="Email Address" required autocomplete="off">
+                </div>
+                <div class="form-wrap">
+                    <input type="password" name="password" id="signup-password" placeholder="Password" required autocomplete="off">
+                </div>
+                <div class="form-wrap">
+                    <input type="password" name="confirm password" id="signup-confirm-password" placeholder="Confirm Password" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn btn-primary disabled" id="signup-button" disabled>Sign up</button>
+                <div>Already a member?<button class="btn btn-link" id="nav-login">Signin</button></div>
+            </div>
+        </div>
+        <!-- ALSO MAKE SURE ITS DYNAMIC IN THE SENSE THAT IT CAN GO DOWN TO 400 PIXELS WIDE -->
+        <!-- USE THIS DIV BELOW AND CREATE ANOTHER DIV FOR A PAGE THAT WILL HAVE A FEED BUT MAKE THE FEED THROUGH JAVASCRIPT SINCE IT
+            HAS TO BE DYNAMIC N YEAH SHOULD BE G -->
+        <div class="hide" id="section-logged-in">
+            <nav class="navbar navbar-dark bg-primary" style="display: flex; justify-content: space-between;">
+                <div style="display: inline-block;">
+                    <h3 id="lurk-for-work-logo">LurkForWork</h3>
+                    <img src="imgs/person-circle.svg" alt="Profile icon" id="own-profile-button">
+                    <button id="create-job-button" class="btn btn-primary">
+                        <img src="imgs/pencil-square.svg">
+                        <div style="color: white">Create Job</div>
+                    </button>
+                </div>
+                <button class="btn btn-light" type="button" id="logout">Log Out</button>
+            </nav>
+            <div id="feed">
+                <div id="job-feed-header"><h3>Job Feed</h3></div>
+                <div id="feed-list">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; lurkforwork.com 2022</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/auth.js"></script>
+    <script type="module" src="src/profile.js"></script>
+    <script type="module" src="src/job.js"></script>
+</body>
+</html>
+

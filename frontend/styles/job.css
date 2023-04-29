@@ -1,0 +1,108 @@
+#container-job
+{
+    /* width: 400px; */
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border: 2px solid #259ccf;
+    padding: 20px;
+    text-align: left;
+    padding: 2px 2px 2px 10px;
+    margin-bottom: 10px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    overflow: auto;
+    background-color: white; 
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    white-space: nowrap; 
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+
+#container-job hr {
+    border-top: 1px solid black;
+    margin: -10px 0px 0px 0px;
+}
+
+#job-feed-header {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.job-profile:hover {
+    text-decoration: underline;
+    cursor: pointer; 
+  }
+
+.job-profile { 
+    font-weight: bold;
+}
+
+#comment-popup:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#like-popup:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* #feed-list {
+    position: absolute;
+    top: 120px;
+} */
+
+
+.like-comment {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+.like-comment:hover {
+    background-color: #e9ebee;
+    cursor: pointer;
+  }
+
+
+.like-comment {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.like-comment:hover {
+    background-color: #e9ebee;
+    cursor: pointer;
+  }
+

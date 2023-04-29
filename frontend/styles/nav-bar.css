@@ -1,0 +1,37 @@
+#lurk-for-work-logo {
+    display: inline-block; /* makes the logo and SVG appear on the same line */
+    margin-right: 10px; /* adds some space between the logo and SVG */
+    color: white; /* sets the color of the logo to white */
+    margin-bottom: 0px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#logout {
+    margin-right: 5px;
+}
+#own-profile-button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+#own-profile-button:hover {
+    background-color: #eee;
+    box-shadow: 0px 0px 5px #888;
+}
+
+#create-job-button {
+    font-size: 12px;
+    /* display: inline-block; */
+    float: right;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+  
+  #create-job-button img {
+    width: 20px;
+    height: 20px;
+  }
